@@ -17,6 +17,7 @@ module FormsLab
         ship = Ship.new(details)
         ship.pirate = pirate
         ship.save
+        binding.pry
       end
       erb :"pirates/show"
     end
