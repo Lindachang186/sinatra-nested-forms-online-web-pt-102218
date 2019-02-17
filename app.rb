@@ -18,7 +18,7 @@ module FormsLab
         ship.pirate = pirate
         ship.save
 
-      erb :show
+      erb :"pirates/show"
       end
     end
 
