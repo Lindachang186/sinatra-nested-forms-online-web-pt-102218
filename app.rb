@@ -12,8 +12,8 @@ module FormsLab
     end
 
     post '/pirates' do
+      @pirate = Pirate.new(params[:pirate])
       binding.pry
-      @pirate = Pirate.new(params[:pirate][:name],params[:pirate][:weight], params[:pirate][:height])
       @pirate.each do |details|
         ship = Ship.new(details)
         ship.pirate = pirate
